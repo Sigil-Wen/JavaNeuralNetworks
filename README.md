@@ -1,5 +1,5 @@
-# JavaNeuralNetworks
- Neural Network Class In Java
+# JavaNeuralNetworks by Sigil Wen
+ Neural Network Class In Java. Back Propagation in development.
  
 ## Creating a NeuralNetwork Object
 NeuralNetwork nameOfNeuralNetwork = new NeuralNetwork(int[], boolean);
@@ -24,10 +24,17 @@ Boolean Value to specify if the network uses softmax activation. Default value i
 #### displayNet()
 Displays each layer of the network with corresponding weight and bias values
 
-#### displayResults(double[][])
+#### displayResults()
 Displays the output of the neural network given a dataset
 
-#### forwardPass(double[][])
+#### forwardPass()
 Forward Propagation through the neural network given a dataset. Returns a 2D array of oututs
 
-#### softmax
+#### softmax()
+Applies softmax function to output
+
+## Loss Functions
+#### meanSquareError()
+Mean Square Error Loss
+#### logisticError()
+Logistic Error Loss 
